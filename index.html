@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <style>
+    .btn-cart{
+        margin: 10px;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+    }
+
+    .product-item{
+        display: flex;
+        justify-content: space-around;
+        width: 500px;
+        align-items: center;
+        border: 1px solid #000;
+        margin: 10px;
+        }
+
+    .btn-cart{
+        margin-left: 50px;
+    }
+
+    .buy-btn{
+        background-color: blueviolet;
+        color: cornsilk;
+    }
+    </style>
+
+</head>
+<body>
+    <header>
+        <button class="btn-cart" type="button">Корзина</button>
+    </header>
+    <main>
+        <div class="products"></div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

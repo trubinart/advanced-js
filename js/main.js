@@ -108,20 +108,22 @@ function renderBasket(){
 
 document.querySelector('.btn-cart').addEventListener('click', (e) => {
     renderBasket();
-})
 
-for (let i of document.querySelectorAll('.basket-add')){
-    i.addEventListener('click', (e) => {
-        for (let prod in productsForBasket.data.contents){
-            if (productsForBasket.data.contents[prod].id_product == e.target.parentElement.dataset.id){
-                productsForBasket.data.contents[prod].quantity += 1;
-                productsForBasket.data.amount += productsForBasket.data.contents[prod].price;
-                productsForBasket.data.countGoods +=1;
-                console.log(productsForBasket.data.countGoods);
-                console.log(productsForBasket.data.amount);
+    for (let i of document.querySelectorAll('.basket-add')){
+        i.addEventListener('click', (e) => {
+            for (let prod in productsForBasket.data.contents){
+                if (productsForBasket.data.contents[prod].id_product == e.target.parentElement.dataset.id){
+                    productsForBasket.data.contents[prod].quantity += 1;
+                    productsForBasket.data.amount += productsForBasket.data.contents[prod].price;
+                    productsForBasket.data.countGoods +=1;
+                    console.log(productsForBasket.data.countGoods);
+                    console.log(productsForBasket.data.amount);
+                }
+
             }
+            renderBasket();
+        })
+    }
 
-        }
-        renderBasket();
-    })
-}
+
+})

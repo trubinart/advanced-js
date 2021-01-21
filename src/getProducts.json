@@ -1,0 +1,56 @@
+[
+  {
+    "id_product": 124,
+    "product_name": "Keyboard",
+    "path": "keyboard.jpg",
+    "price": 1600
+  },
+  {
+    "id_product": 457,
+    "product_name": "Gamepad",
+    "path": "gamepad.jpg",
+    "price": 3000
+  },
+  {
+    "id_product": 123,
+    "product_name": "Ноутбук",
+    "path": "notebook.jpg",
+    "price": 45600
+  },
+  {
+    "id_product": 456,
+    "product_name": "Мышка",
+    "path": "mouse.jpg",
+    "price": 1000
+  },
+  {
+    "id_product": 1001,
+    "product_name": "Телевизор",
+    "path": "10024595b.jpg",
+    "price": 2000
+  },
+  {
+    "id_product": 1002,
+    "product_name": "Холодильник",
+    "path": "20032251b.jpg",
+    "price": 2100
+  },
+  {
+    "id_product": 1003,
+    "product_name": "Электровеник",
+    "path": "20063291b.jpg",
+    "price": 520
+  },
+  {
+    "id_product": 1004,
+    "product_name": "Сотовый телефон",
+    "path": "30048222b.jpg",
+    "price": 520
+  },
+  {
+    "id_product": 1005,
+    "product_name": "Наушники",
+    "path": "50049110b.jpg",
+    "price": 210
+  }
+]

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <!--
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    -->
+</head>
+<body>
+
+    <div class="container">
+        <div id="app">
+
+        <header class="header">
+            <a href="#">
+                <img src="img/logo.jpg" alt="" width="80" height="80" class="logo">
+            </a>
+            <nav class="header__menu-nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item"> <a href="#" class="header__menu-link">Главная</a> </li>
+                    <li class="header__menu-item"> <a href="#" class="header__menu-link header__menu-link-active">Каталог</a> </li>
+                    <li class="header__menu-item"> <a href="#" class="header__menu-link">Контакты</a> </li>
+                </ul>
+            </nav>
+
+            <search @searh="search"></search>
+
+            <button class="header__basket" type="button" @click="showBasket = !showBasket">
+                {{ textBasket }}
+            </button>
+        </header>
+        <main>
+
+            <basket :basket="basket"
+                    :visibility="showBasket"
+                    :summbasket="summBasket"
+                    @remove="delProduct"
+                    @add="addProduct">
+
+            </basket>
+
+            <section class="catalog">
+                <products :products="products" :img="imgCatalog" @add-product="addProduct"> </products>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Copyright &copy; 2020</p>
+        </footer>
+        </div>
+        <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+        <script src="js/vue.js"></script>
+
+       <!--
+        <script src="js/main.js" type="module"></script>
+        -->
+    </div>
+</body>
+</html>
